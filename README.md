@@ -1,19 +1,18 @@
 # *__Lebron or Buckets__*    
 
 
-
 ### **Background**
 Lebron or Buckets is a HTML/Javascript game that simulates the classic arcade basketball shooting game. In this iteration, your opponent is none other than NBA star Lebron James. The player has 1 minute to score as many points as possible by shooting the basketball in the hoop. At the end of the 1 minute, the player must have a score higher than Lebron's score in order to win.    
 
-     
+
     
 ### **Functionality & MVPs:** 
 
-- Player is able to use their mouth to properly interact with the basketball object
+- Player is able to use their mouse to properly interact with the basketball object
 - Buttons to start the game, and restart once the game ends 
 - Upon starting or finishing a game, a message/image will appear in the API
 - A counter will indicate the player's current score 
-- Proper interactions between objects based on physics engine 'Matter-js'
+- Proper interactions between objects 
 - Separate buttons to mute musical audio and gameplay audio(i.e. sound effects when the ball goes into the hoop)
    
    
@@ -23,8 +22,6 @@ Additional files:
 - Instructions of the game 
 - Folder with wireframe images      
       
-
-
 
      
 ### **Wireframe**
@@ -45,39 +42,31 @@ Each wireframe is attached with a label or box that describes what will be displ
 - Timer: Once the player hits the Start Button, the timer will start shortly after. Starting at 60, the timer will go down to 00. Once the timer hits 0, the game will end.       
     
         
-          
-           
-           
 
 ![alt text](/wireframe_image/gameover.png)     
 - Gameover Message: Will indicate to the player if they won or loss the game, display their current score and the score required to win
 - Play Again Button: The player will be able to click this button and the game will reset, allowing them to attempt again.       
-         
-             
-   
+           
     
 
 ### **Technologies, Libraries, APIs:**
 This project will have the following technologies:
 - Canvas API to render the basketball, the hoop, the scoreboard, and any images/text that would appear depending on specific actions
-- Matter-js library to handle and code the physics that goes into the functionality of the game
 - Webpack to bundle the source Javascript code into one file 
 - npm to manage project dependencies       
      
            
-     
-
 
        
 ### **Implementation Timeline** 
 _Friday:_ 
-- Getting more familiar with Matter-js library 
+- Getting more familiar with physics logic and vanilla DOM syntax
 - Setting up general framework of index.html 
 - Try to get objects with proper physics load in my browswer
 - Create the skeleton of my project 
         
 _Weekend:_ 
-- Getting more familiar with Matter-js library 
+- Getting more familiar with physics logic
 - Create the proper objects that interact with physics(i.e. Basketball, hoop)
 - Allowing these objects to properly interact with physics 
 - Creating a working scoreboard that keeps track of the player's current score 

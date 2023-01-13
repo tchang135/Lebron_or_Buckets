@@ -5,3 +5,7 @@
   border: 4px solid purple;
   padding: 20px;
 }
+
+#root {
+  color: orange;
+}
