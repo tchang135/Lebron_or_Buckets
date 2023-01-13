@@ -1,4 +1,4 @@
-import Example from './scripts/example';
+import Example from './scripts/example.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.querySelector('#root')

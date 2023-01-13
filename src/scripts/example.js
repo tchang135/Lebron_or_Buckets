@@ -2,7 +2,7 @@ class Example {
     constructor(ele) {
         this.ele = ele;
         let newEle = document.createElement('h1')
-        newEle.innerText = 'hello3'
+        newEle.innerText = 'hello4'
         ele.append(newEle)
         // this.ele.innerHTML = "<h1>It's alive!</h1>"
         // this.handleClick = this.handleClick.bind(this)
