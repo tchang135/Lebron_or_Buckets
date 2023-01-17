@@ -1,9 +1,9 @@
 import Ball from './ball.js'
-import Hoop from '.hoop.js'
+import Hoop from './hoop.js'
 export default Game
 
 class Game {
-    constructor(root) {
+    constructor(canvas) {
         this.ctx = canvas.getContext("2d");
         this.dimensions = { width: canvas.width, height: canvas.height };
         this.registerEvents();
@@ -39,7 +39,7 @@ class Game {
 
     animate() {
         this.ball.animate(this.ctx)
-        this.hoop.animate(this.ctx)
+        // this.hoop.animate(this.ctx)
     }
 
     timer () {

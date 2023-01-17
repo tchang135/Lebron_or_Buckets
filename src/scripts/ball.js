@@ -1,6 +1,6 @@
 class Ball {
     constructor() {
-      this.radius = 20;
+      this.radius = 25;
       this.x = 0;
       this.y = 0;
       this.vx = 0;
@@ -17,7 +17,7 @@ class Ball {
       ctx.lineWidth = this.lineWidth;
       ctx.fillStyle = this.color;
       ctx.beginPath();
-      ctx.arc(200, 100, this.radius, 0, Math.PI * 2, true);
+      ctx.arc(200, 400, this.radius, 0, Math.PI * 2, true);
       ctx.closePath();
       ctx.fill();
       if (this.lineWidth > 0) {
