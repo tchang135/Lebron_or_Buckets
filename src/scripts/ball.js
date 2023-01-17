@@ -10,7 +10,7 @@ class Ball {
       this.lineWidth = 1;
     }
   
-    draw(ctx) {
+    drawBall(ctx) {
       ctx.save();
       ctx.translate(this.x, this.y);
       ctx.rotate(this.rotation);
@@ -25,15 +25,20 @@ class Ball {
       }
       ctx.restore();
     }
-  
-    // getBounds() {
-    //   return {
-    //     x: this.x - this.radius,
-    //     y: this.y - this.radius,
-    //     width: this.radius * 2,
-    //     height: this.radius * 2
-    //   };
-    // }
-  }
+
+    getBounds() {
+        return {
+          x: this.x - this.radius,
+          y: this.y - this.radius,
+          width: this.radius * 2,
+          height: this.radius * 2
+        };
+      }
+
+    animate() {
+        this.drawBall(ctx)
+    }
+}
+    
 
 export default Ball;
