@@ -15,37 +15,47 @@ class Game {
         this.animate();
     }
     
-      restart() {
+    restart() {
         this.running = false;
         this.score = 0;
         this.ball = new Ball();
         this.hoop = new Hoop();
         this.animate();
-      }
+    }
     
-      registerEvents() {
+    registerEvents() {
         
-      }
+    }
     
     
-      gameOver() {
-        if (timer === 0) {
-            return false
-        } else {
-            return true 
-        };
-      }
+    gameOver() {
+        //some kind of error message, try again
+    };
+      
 
 
     animate() {
         this.ball.animate(this.ctx)
-        // this.hoop.animate(this.ctx)
+        this.hoop.animate(this.ctx)
     }
 
-    timer () {
+    timer() {
         let startTime = 60
-        setInterval(countdown(startTime), 1000)
+        while (startTime > 0) {
+        setInterval(function() {
+            startTime -= 1
+        }, 1000)
+        return startTime
+        }
+        // somehow display timer
     }
 
+    scoreboard() {
+        //have set score that player needs to beat on display 
+        //have current score as 0, and increment everytime the ball passing through the hoop is detected
+    }
 
+    
 }
+
+

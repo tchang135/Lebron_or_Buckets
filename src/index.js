@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     basketball.drawBall(ctx)
     hooptest.drawHoop(ctx)
+
+
+    //let timeToPlay = new Game(root) 
+    //timeToPlay.play()
+
+    // if timeToPlay.hoop.score 
+    //timeToPlay.scoreboard.score += 1 
+
+    // if timeToPlay.timer() === 0, return timeToPlay.gameOver
     
     
 })
