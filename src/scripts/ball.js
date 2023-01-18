@@ -38,6 +38,8 @@ class Ball {
     animate() {
         this.drawBall(ctx)
     }
+
+    
 }
     
 

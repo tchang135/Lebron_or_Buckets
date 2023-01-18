@@ -1,6 +1,7 @@
 import Ball from './ball.js'
 import Hoop from './hoop.js'
-export default Game
+import Backboard from './backboard.js'
+
 
 class Game {
     constructor(canvas) {
@@ -37,6 +38,7 @@ class Game {
     animate() {
         this.ball.animate(this.ctx)
         this.hoop.animate(this.ctx)
+        // this.backboard.animate(this.ctx)
     }
 
     timer() {
@@ -57,5 +59,10 @@ class Game {
 
     
 }
+
+
+
+
+export default Game
 
 
